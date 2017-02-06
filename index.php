@@ -15,7 +15,7 @@ if(isset($_POST['submit']))
 		$msg="Sorry some error occured. Please try again.";
 }
 if (!empty($msg)) 
-	echo $msg;
+	echo "<span style='padding:10px; background:rgba(0,220,30,.3); color:#f9f9f9;'>".$msg."</span>";
 
 ?>
 <!DOCTYPE html>
@@ -28,7 +28,7 @@ if (!empty($msg))
 <body>
 <header>
 	<div class="col-1">
-		<img src="assets/images/Logo.png" />
+		<img src="assets/images/logo.png" />
 	</div>
 	<div id="Header-Mid" class="col-9">
 		<p>Toll-free number 1800-123-1260</p>
