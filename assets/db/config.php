@@ -2,9 +2,9 @@
 class Database
 {
     private $host = "localhost";
-    private $username = "root";
-    private $password = "";
-    private $dbname = "upx";
+    private $username = "id729909_upx";
+    private $password = "upx-academy";
+    private $dbname = "id729909_upx";
     public $conn;
 
     public function Database_Connection()
