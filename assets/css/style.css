@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Raleway';
-  src: url(../assets/fonts/Raleway-Light.ttf);
+  src: url(/assets/fonts/Raleway-Light.ttf);
 }
 @font-face {
   font-family: 'Roboto-Thin';
-  src: url(../assets/fonts/Roboto-Thin.ttf);
+  src: url(/assets/fonts/Roboto-Thin.ttf);
 }
 *{
     box-sizing: border-box;
@@ -100,11 +100,11 @@ header
 }
 #Live-Heading:after
 {
-	top: -1%;
+	top: -5%;
 	right: -2%;
 	transform: skew(30deg);
 	position: absolute;
-	content: url('assets/images/triangle.png');
+	content: url('/assets/images/triangle.png');
 }
 #Live-Heading p
 {
@@ -179,7 +179,8 @@ header
 #Live-Body fieldset
 {
 	margin: 5% 0 0 5%;
-	height: 350px;
+	min-height: 350px;
+        height: auto;
 	font-size: 20px;
 	text-align: center;
 	border: 1px solid rgba(242,168,63,1);
@@ -242,7 +243,7 @@ header
 	top: -65%;
 	left: 20%;
 	position: absolute;
-	content: url('../assets/images/Session-title-bar.png');
+	content: url('/assets/images/session-title-bar.png');
 }
 #Session-Title:after
 {
@@ -250,6 +251,7 @@ header
 }
 #Session-Body
 {
+        margin-top: 1%;
 	padding: 10px;
 	text-align: left;
 	font-size: 20px;
@@ -456,4 +458,99 @@ footer
 	width: 50%;
 	margin: auto;	
 	text-align: center;
+}
+@media only screen and (min-width: 400px) and (max-width:1024px)  {
+    header
+    {
+    	display: block;
+    	text-align: center;
+    }
+    header img
+    {
+    	width: 60%;
+    	height: 60%;	
+    }
+    #Header-Mid
+    {
+    	width: 100%;
+    	display: block;
+    	border: none;
+    }
+    #Header-Right
+    {
+    	right: 0;
+    	top: 0;
+    	position: relative;
+    }
+    #Data-Body hr
+    {
+    	display: none;
+    }
+    #Data-Body img
+    {
+    	margin: auto;
+    	display: block;
+    }
+    #Sessions-Grid
+    {
+    	width: 50%;
+    	margin: 5%;
+    }
+	#Live-Heading
+	{
+		top: 0;
+		left: 0;
+		background: none;
+		margin: 3% auto;
+		transform: none;
+		position: relative;
+		box-shadow: none;	
+		transform: skew(-30deg);
+		background: rgba(242,168,63,1);
+		box-shadow: 20px 20px 15px rgba(0,0,0,.3);
+	}
+	#Live-Heading p
+	{
+		transform: none;
+		padding: 10px;
+		line-height: 25px;
+		transform: skew(30deg);
+	}
+	#Live-Heading:after
+	{
+		display: none;
+	}
+	#Live-Left
+	{
+		width: 100%;
+		display: block;
+	}
+	#Live-Body
+	{
+		padding: 4%;
+		display: block;
+		position: relative;
+		background: rgba(41,60,64,1);
+	}
+	#Live-Body fieldset
+	{
+		margin: 5%;
+		min-height: 350px;
+        height: auto;
+		font-size: 20px;
+		text-align: center;
+		border: 1px solid rgba(242,168,63,1);
+	}		
+	#Left-Course,#Right-Course
+	{
+		margin: 2% 5%;
+		display: block;
+		padding: 20px;
+	}
+	#Left-Course-Content,#Right-Course-Content
+	{
+		width: 50%;
+		margin: 5% auto;
+	}
+
 }
